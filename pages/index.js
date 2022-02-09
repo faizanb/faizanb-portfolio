@@ -1,4 +1,5 @@
 import Typed from 'react-typed';
+import Link from 'next/link';
 
 export default function DefaultHome() {
   return (
@@ -25,7 +26,9 @@ export default function DefaultHome() {
           </span>
         </div>
         <div className='btn_view'>
-          <button>Checkout More</button>
+          <Link href="/about">
+            <a><button>Checkout More</button></a>
+          </Link>
         </div>
       </div>
       <div className='home_img_block'></div>
